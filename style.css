@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #F8F8FF;
 }
 
@@ -12,7 +12,7 @@ a {
     color: white;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,8 +21,9 @@ a {
     max-width: 1200px;
     margin: auto;
 }
- /* topo */
-.topo{
+
+/* topo */
+.topo {
     display: flex;
     width: 100%;
     background-color: darkslateblue;
@@ -34,46 +35,48 @@ a {
     top: 0;
 }
 
-.imagem{
+.imagem {
     flex: 1;
     display: flex;
     align-items: center;
 }
 
-.imagem img{
+.imagem img {
     padding: 15px;
 }
 
-.imagem h3{
+.imagem h3 {
     padding-left: 20px;
 }
 
-.menu{
+.menu {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     list-style: none;
 }
 
-.menu li{
+.menu li {
     padding: 15px;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: aquamarine;
 }
 
-.conteudo{
+.conteudo {
     font-size: 20px;
     width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
-.titulo{
+.titulo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,13 +86,13 @@ a {
     margin-bottom: 50px;
 }
 
-.titulo h1{
+.titulo h1 {
     font-size: 72px;
     color: white;
 }
 
 /* rodape */
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,4 +101,40 @@ footer{
     background-color: darkslateblue;
     margin-top: 100px;
     color: white;
+}
+
+iframe {
+    margin: auto;
+}
+
+/* comissoes */
+.comissao {
+    border-bottom: 1px solid darkslateblue;
+}
+
+.botaoComissao {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.botaoComissao:hover {
+    background-color: #e0ffff;
+    border-radius: 10px;
+}
+
+.botaoComissao span {
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.botaoComissao img {
+    transform: scale(0.6);
+}
+
+.descricaoComissao {
+    display: none;
+    color: #696969;
+    padding: 15px;
 }
