@@ -2,78 +2,102 @@
 
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PET Eng Comp</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET Eng Comp</title>
 
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
+<body>
 
-        <div class="container">
+    <div class="container">
 
-            <div class="topo">
+        <div class="topo">
 
-                <div class = "imagem">
+            <div class="imagem">
 
-                    <img src="assets/logo-pet.png" alt="">
-                    <h3>PET Engenharia de Computação</h3>
-
-                </div>
-
-                <div class="menu">
-
-                    <ul>
-                        <li>
-                            <a href="./index.html">Inicio</a>
-                        </li>
-
-                        <li>
-                            <a href="./onde_estamos.html">Onde Estamos</a>
-                        </li>
-
-                        <li>
-                            <a href="./comissoes.html">Comissoes</a>
-                        </li>
-
-                        <li>
-                            <a href="./admin.html">Admin</a>
-                        </li>
-                    </ul>
-
-                </div>
+                <img src="assets/logo-pet.png" alt="">
+                <h3>PET Engenharia de Computação</h3>
 
             </div>
 
-            <div class="conteudo">   
+            <div class="menu">
 
-                <div class="titulo">
+                <ul>
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
 
-                    <h1>Admin</h1>  
+                    <li>
+                        <a href="./onde_estamos.html">Onde Estamos</a>
+                    </li>
 
-                </div>
+                    <li>
+                        <a href="./comissoes.html">Comissoes</a>
+                    </li>
 
-                <p>
-                    O Programa de Educação Tutorial (PET) de Engenharia de Computação da Universidade Federal do Espírito Santo (UFES) é uma iniciativa de excelência que visa promover o desenvolvimento acadêmico, pessoal e profissional dos alunos de Engenharia de Computação. Fundado com o objetivo de complementar a formação dos estudantes, o PET oferece um ambiente de aprendizado dinâmico, onde a teoria e a prática se encontram em projetos que envolvem pesquisa, ensino e extensão.
-                </p>
-                <p>
-                    Composto por um grupo seleto de alunos dedicados, orientados por um professor tutor, o PET Engenharia de Computação UFES busca incentivar o pensamento crítico, a inovação tecnológica e o trabalho em equipe. Através de projetos interdisciplinares, os integrantes têm a oportunidade de desenvolver soluções que impactam a sociedade, fortalecendo suas habilidades técnicas e socioemocionais.
-                </p>
-                <p>
-                    Além dos projetos, o PET organiza e participa de diversas atividades, como workshops, palestras, eventos acadêmicos e competições, contribuindo para o enriquecimento da comunidade acadêmica e ampliando as perspectivas de seus membros. A cultura de colaboração e a busca contínua por excelência fazem do PET um espaço privilegiado para a formação de engenheiros de computação capacitados, conscientes e preparados para enfrentar os desafios do mercado de trabalho e do mundo.
-                </p>
-                <p>
-                    O PET Engenharia de Computação UFES é mais do que um grupo de estudos; é um espaço de transformação, onde o aprendizado se alinha com a prática, e onde cada integrante é incentivado a alcançar seu máximo potencial, contribuindo para o avanço da engenharia e da tecnologia no Brasil e no mundo.
-                </p>
+                    <li>
+                        <a href="./admin.html">Admin</a>
+                    </li>
+                </ul>
 
             </div>
+
         </div>
 
-        <footer>
-            Todos os direitos reservados.
-        </footer>
-    </body>
+        <div class="conteudo">
+
+            <div class="titulo">
+
+                <h1>Admin</h1>
+
+            </div>
+
+            <div class="form">
+
+                <div class="areaInput">
+
+                    <span>Nome:</span>
+                    <input type="text" placeholder="Nome" id="Nome" onchange="setNome()">
+
+                </div>
+
+                <div class="areaInput">
+
+                    <span>Data de nascimento:</span>
+                    <input type="date" placeholder="" id="Data" onchange="setData()">
+
+                </div>
+
+                <div class="areaInput">
+
+                    <span>Email:</span>
+                    <input type="email" placeholder="Email" id="Email" onchange="setEmail()">
+
+                </div>
+
+                <button onclick="salvar()">
+                    Salvar
+                </button>
+
+            </div>
+
+            <div class="listaDePetianos">
+
+                <h3>Lista de Petianos</h3>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        Todos os direitos reservados.
+    </footer>
+
+    <script src="admin.js"></script>
+</body>
 
 </html>
